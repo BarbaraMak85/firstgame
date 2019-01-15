@@ -1,0 +1,15 @@
+body { background-color: #fff; }
+
+.btn { outline: none; border-radius: 4px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-right: 10px; margin-top: 25px; font-size: 18px; width: 126px; height: 40px; background-color: #999999; cursor: pointer; }
+
+.container .text-center .btn { outline: none; border: none; background-color: #999999; }
+
+.btn { width: 130px; height: 41px; }
+
+.btn-default { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-right: 10px; background-color: #A4A4A4; color: #fff; margin-top: 25px; }
+
+.fa-hand-paper { color: #33CCFF; }
+
+.fa-hand-scissors { color: #FF0033; }
+
+.container { margin-top: 35px; }
