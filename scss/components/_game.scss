@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #DEDEDE;
 }
 
 .btn {
@@ -13,14 +13,18 @@ body {
     font-size: 18px;
     width: 126px;
     height: 40px;
-    background-color: #999999;
+    background-color: #717171;
     cursor: pointer;
+}
+
+.player-move {
+    background-color: #717171;
 }
 
 .container .text-center .btn {
     outline: none;
     border: none;
-    background-color: #999999;
+    background-color: #717171;
 }
 
 .btn {
@@ -46,6 +50,88 @@ body {
     color: #FF0033;
 }
 
-.container {
-    margin-top: 35px;
+body {
+    padding: 10px;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    &.show {
+        display: block;
+    }
+}
+
+.modal {
+    display: none;
+    background: #fff;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    overflow: scroll;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    &.show {
+        display: block;
+    }
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px;
+        color: #000;
+        text-decoration: none;
+    }
+    header {
+        font-size: 20px;
+        line-height: 30px;
+        min-height: 30px;
+        font-weight: bold;
+        padding: 0 30px;
+    }
+    .content {
+        min-height: 30px;
+        padding: 5px 30px;
+    }
+}
+
+.table-t {
+    display: flex;
+    justify-content: center;
+    background-color: #DEDEDE;
+}
+
+th {
+    background-color: #EF9A9A;
+    color: #fff;
+}
+
+tbody {
+    background-color: #fff;
+}
+
+table {
+    width: 70%;
+    margin-top: 80px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    width: 40px;
+    height: 40px;
 }

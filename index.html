@@ -30,19 +30,19 @@
     </div>
     <div id="js-playerPickElement" class="container">
         <div class="row text-center">
-            <button id="js-playerPick_rock" class="btn">
+            <button id="js-playerPick_rock" data-move="rock" class="btn player-move">
      <span class="badge">
      <i class="far fa-hand-rock" aria-hidden="true"></i>
      </span>
      Rock
      </button>
-            <button id="js-playerPick_paper" class="btn">
+            <button id="js-playerPick_paper" data-move="paper" class="btn player-move">
      <span class="badge">
      <i class="far fa-hand-paper" aria-hidden="true"></i>
      </span>
      Paper
      </button>
-            <button id="js-playerPick_scissors" class="btn">
+            <button id="js-playerPick_scissors" data-move="scissors" class="btn player-move">
      <span class="badge">
      <i class="far fa-hand-scissors" aria-hidden="true"></i>
      </span>
@@ -96,7 +96,36 @@
             </div>
         </div>
     </div>
+    <div class="overlay" id="modal-overlay">
+        <div class="modal" id="modal-one">
+            <a href="#" class="close">x</a>
+            <header>Game result</header>
+            <div class="content">
+                <p id="game-result"></p>
+
+            </div>
+            <div class="table-t">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Numer rundy</th>
+                            <th>Ruch gracza</th>
+                            <th>Ruch komputera</th>
+                            <th>Wynik rundy</th>
+                            <th>Wynik gry</th>
+                        </tr>
+
+                    </thead>
+                    <tbody id="result-table">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
