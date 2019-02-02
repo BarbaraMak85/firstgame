@@ -108,8 +108,10 @@ body {
 }
 
 .table-t {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   background-color: #DEDEDE;
 }
 
@@ -140,5 +142,4 @@ th {
   width: 40px;
   height: 40px;
 }
-
 /*# sourceMappingURL=style.css.map */

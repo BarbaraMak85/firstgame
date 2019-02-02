@@ -159,13 +159,14 @@ function playerPick(playerPick) {
 for (i = 0; i < params.elements.length; i++) {
     var element = params.elements[i];
 
-    element.onclick = (function() {
+    element.addEventListener('click', listenerElement);
 
-        var move = element.getAttribute("data-move");
+}
 
-        return function() {
-            playerPick(move);
-        }
-    })();
+function listenerElement() {
 
+    var move = element.getAttribute("data-move");
+
+
+    playerPick(move);
 }
